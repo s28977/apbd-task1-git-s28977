@@ -21,4 +21,17 @@ public class StatisticsHelper
         }
         return sum/array.Length;
     }
+
+    public static int CalculateMin(int[] array)
+    {
+        int min = array[0];
+        foreach (int el in array)
+        {
+            if (el < min)
+            {
+                min = el;
+            }
+        }
+        return min;
+    }
 }
