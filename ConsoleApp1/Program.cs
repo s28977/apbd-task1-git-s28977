@@ -6,8 +6,15 @@ class Program
     {
         PrintHello();
         Console.WriteLine("Enter username:");
-        string userName = Console.ReadLine();
-        Console.WriteLine("Username is: " + userName);
+        string username = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(username))
+        {
+            Console.WriteLine("Username cannot be empty.");
+        }
+        else
+        {
+            Console.WriteLine("Hello " + username);
+        }
     }
 
     private static void PrintHello()
