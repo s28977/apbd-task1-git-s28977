@@ -11,4 +11,14 @@ public class StatisticsHelper
         }
         return sum;
     }
+
+    public static double CalculateAverage(int[] array)
+    {
+        double sum = 0;
+        foreach (var el in array)
+        {
+            sum += el;  
+        }
+        return sum/array.Length;
+    }
 }
