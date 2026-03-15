@@ -15,6 +15,8 @@ class Program
         {
             Console.WriteLine("Hello " + username);
         }
+        int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        Console.WriteLine(StatisticsHelper.Sum(array));
     }
 
     private static void PrintHello()
