@@ -37,6 +37,14 @@ public class StatisticsHelper
 
     public static int CalculateMax(int[] array)
     {
-        return 0;
+        int max = array[0];
+        foreach (int el in array)
+        {
+            if (el > max)
+            {
+                max = el;
+            }
+        }
+        return max;
     }
 }
