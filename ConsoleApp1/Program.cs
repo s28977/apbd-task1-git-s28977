@@ -6,14 +6,14 @@ class Program
     {
         PrintHello();
         Console.WriteLine("Enter username:");
-        string username = Console.ReadLine();
-        if (string.IsNullOrWhiteSpace(username))
+        string user = Console.ReadLine();
+        if (string.IsNullOrWhiteSpace(user))
         {
             Console.WriteLine("Username cannot be empty.");
         }
         else
         {
-            Console.WriteLine("Hello " + username);
+            Console.WriteLine("Hello " + user);
         }
         int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         Console.WriteLine(StatisticsHelper.Sum(array));
